@@ -1,0 +1,22 @@
+{
+  "name": "adonline_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test": "cypress run",
+    "cy:open": "cypress run --record --key c735b7c0-66d3-4c24-b069-cbb02e3da4e4",
+    "cy:open:allure": "cypress run --record --key c735b7c0-66d3-4c24-b069-cbb02e3da4e4 --env allure=true",
+    "cy:open2": "npx cypress run --record --key c735b7c0-66d3-4c24-b069-cbb02e3da4e4",
+    "allure:report": "allure generate allure-results --clean -o allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^12.14.0",
+    "cypress-real-events": "^1.9.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
